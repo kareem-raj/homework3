@@ -1,0 +1,30 @@
+<!-- Copyright (c) by Kareem Rajeh
+Kareem_Rajeh@student.uml.edu
+ The purpose of the program is to create an interactive multiplication table that displays the correct
+ error messages, and works and used as intended to display multiplication tables -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dynamic Table</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Interactive Dynamic Table</h1>
+ 
+    <form id="tableForm">
+        Column Start: <input type="number" id="minColumn" placeholder="-50 to 50">
+        Column End:   <input type="number" id="maxColumn" placeholder="-50 to 50">
+        Row Start:    <input type="number" id="minRow"    placeholder="-50 to 50">
+        Row End:      <input type="number" id="maxRow"    placeholder="-50 to 50">
+        <button type="submit">Generate</button>
+    </form>
+ 
+    <div id="errorMessage"></div>
+    <div id="tableContainer"></div>
+ 
+    <script src="main.js"></script>
+</body>
+</html>
+ 
